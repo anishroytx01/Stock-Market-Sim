@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76784242E6D7C52AD1AC553E /* Pods_Stock_Market_Sim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99149305B6C31CE04159E63 /* Pods_Stock_Market_Sim.framework */; };
+		990C0F0022501EF200FC3D45 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C0EFF22501EF200FC3D45 /* ChartController.swift */; };
+		994423F322C68D9C00C023EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994423F122C68D9C00C023EE /* Main.storyboard */; };
+		99A366F221CAED3A00019750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A366F121CAED3A00019750 /* AppDelegate.swift */; };
+		99A366F421CAED3A00019750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A366F321CAED3A00019750 /* ViewController.swift */; };
+		99A366F921CAED3D00019750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A366F821CAED3D00019750 /* Assets.xcassets */; };
+		99A366FC21CAED3D00019750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A366FA21CAED3D00019750 /* LaunchScreen.storyboard */; };
+		99A3670721CAED3D00019750 /* Stock_Market_SimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3670621CAED3D00019750 /* Stock_Market_SimTests.swift */; };
+		99A3671221CAED3D00019750 /* Stock_Market_SimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A3671121CAED3D00019750 /* Stock_Market_SimUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99A3670321CAED3D00019750 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99A366E621CAED3900019750 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A366ED21CAED3900019750;
+			remoteInfo = "Stock Market Sim";
+		};
+		99A3670E21CAED3D00019750 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99A366E621CAED3900019750 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99A366ED21CAED3900019750;
+			remoteInfo = "Stock Market Sim";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		990C0EF0224F465800FC3D45 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9740FA65E47970860297727D /* Pods-Stock Market Sim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market Sim.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stock Market Sim/Pods-Stock Market Sim.release.xcconfig"; sourceTree = "<group>"; };
+		990C0EFF22501EF200FC3D45 /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
+		994423F222C68D9C00C023EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99A366EE21CAED3A00019750 /* Stock Market Sim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Market Sim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A366F121CAED3A00019750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99A366F321CAED3A00019750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99A366F821CAED3D00019750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99A366FB21CAED3D00019750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99A366FD21CAED3D00019750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A3670221CAED3D00019750 /* Stock Market SimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock Market SimTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3670621CAED3D00019750 /* Stock_Market_SimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_Market_SimTests.swift; sourceTree = "<group>"; };
+		99A3670821CAED3D00019750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A3670D21CAED3D00019750 /* Stock Market SimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock Market SimUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A3671121CAED3D00019750 /* Stock_Market_SimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_Market_SimUITests.swift; sourceTree = "<group>"; };
+		99A3671321CAED3D00019750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99149305B6C31CE04159E63 /* Pods_Stock_Market_Sim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stock_Market_Sim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C95AEFFE69B4ACD349D8F3 /* Pods-Stock Market Sim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stock Market Sim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stock Market Sim/Pods-Stock Market Sim.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99A366EB21CAED3900019750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76784242E6D7C52AD1AC553E /* Pods_Stock_Market_Sim.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A366FF21CAED3D00019750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3670A21CAED3D00019750 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74EA9F8379CAF31E9017B5AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C99149305B6C31CE04159E63 /* Pods_Stock_Market_Sim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99A366E521CAED3900019750 = {
+			isa = PBXGroup;
+			children = (
+				99A366F021CAED3A00019750 /* Stock Market Sim */,
+				99A3670521CAED3D00019750 /* Stock Market SimTests */,
+				99A3671021CAED3D00019750 /* Stock Market SimUITests */,
+				99A366EF21CAED3A00019750 /* Products */,
+				F7A620176DD4BD37B2187D7E /* Pods */,
+				74EA9F8379CAF31E9017B5AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99A366EF21CAED3A00019750 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99A366EE21CAED3A00019750 /* Stock Market Sim.app */,
+				99A3670221CAED3D00019750 /* Stock Market SimTests.xctest */,
+				99A3670D21CAED3D00019750 /* Stock Market SimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99A366F021CAED3A00019750 /* Stock Market Sim */ = {
+			isa = PBXGroup;
+			children = (
+				99A366F121CAED3A00019750 /* AppDelegate.swift */,
+				99A366F321CAED3A00019750 /* ViewController.swift */,
+				990C0EFF22501EF200FC3D45 /* ChartController.swift */,
+				994423F122C68D9C00C023EE /* Main.storyboard */,
+				99A366F821CAED3D00019750 /* Assets.xcassets */,
+				99A366FA21CAED3D00019750 /* LaunchScreen.storyboard */,
+				99A366FD21CAED3D00019750 /* Info.plist */,
+			);
+			path = "Stock Market Sim";
+			sourceTree = "<group>";
+		};
+		99A3670521CAED3D00019750 /* Stock Market SimTests */ = {
+			isa = PBXGroup;
+			children = (
+				99A3670621CAED3D00019750 /* Stock_Market_SimTests.swift */,
+				99A3670821CAED3D00019750 /* Info.plist */,
+			);
+			path = "Stock Market SimTests";
+			sourceTree = "<group>";
+		};
+		99A3671021CAED3D00019750 /* Stock Market SimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99A3671121CAED3D00019750 /* Stock_Market_SimUITests.swift */,
+				99A3671321CAED3D00019750 /* Info.plist */,
+			);
+			path = "Stock Market SimUITests";
+			sourceTree = "<group>";
+		};
+		F7A620176DD4BD37B2187D7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1C95AEFFE69B4ACD349D8F3 /* Pods-Stock Market Sim.debug.xcconfig */,
+				9740FA65E47970860297727D /* Pods-Stock Market Sim.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99A366ED21CAED3900019750 /* Stock Market Sim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A3671621CAED3D00019750 /* Build configuration list for PBXNativeTarget "Stock Market Sim" */;
+			buildPhases = (
+				1F7A0946CF85E697016F3191 /* [CP] Check Pods Manifest.lock */,
+				99A366EA21CAED3900019750 /* Sources */,
+				99A366EB21CAED3900019750 /* Frameworks */,
+				99A366EC21CAED3900019750 /* Resources */,
+				7803111FB040C36E35F60AFE /* [CP] Embed Pods Frameworks */,
+				990C0EF0224F465800FC3D45 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stock Market Sim";
+			productName = "Stock Market Sim";
+			productReference = 99A366EE21CAED3A00019750 /* Stock Market Sim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99A3670121CAED3D00019750 /* Stock Market SimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A3671921CAED3D00019750 /* Build configuration list for PBXNativeTarget "Stock Market SimTests" */;
+			buildPhases = (
+				99A366FE21CAED3D00019750 /* Sources */,
+				99A366FF21CAED3D00019750 /* Frameworks */,
+				99A3670021CAED3D00019750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99A3670421CAED3D00019750 /* PBXTargetDependency */,
+			);
+			name = "Stock Market SimTests";
+			productName = "Stock Market SimTests";
+			productReference = 99A3670221CAED3D00019750 /* Stock Market SimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99A3670C21CAED3D00019750 /* Stock Market SimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99A3671C21CAED3D00019750 /* Build configuration list for PBXNativeTarget "Stock Market SimUITests" */;
+			buildPhases = (
+				99A3670921CAED3D00019750 /* Sources */,
+				99A3670A21CAED3D00019750 /* Frameworks */,
+				99A3670B21CAED3D00019750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99A3670F21CAED3D00019750 /* PBXTargetDependency */,
+			);
+			name = "Stock Market SimUITests";
+			productName = "Stock Market SimUITests";
+			productReference = 99A3670D21CAED3D00019750 /* Stock Market SimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99A366E621CAED3900019750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Anish's Team";
+				TargetAttributes = {
+					99A366ED21CAED3900019750 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					99A3670121CAED3D00019750 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 99A366ED21CAED3900019750;
+					};
+					99A3670C21CAED3D00019750 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 99A366ED21CAED3900019750;
+					};
+				};
+			};
+			buildConfigurationList = 99A366E921CAED3900019750 /* Build configuration list for PBXProject "Stock Market Sim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99A366E521CAED3900019750;
+			productRefGroup = 99A366EF21CAED3A00019750 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99A366ED21CAED3900019750 /* Stock Market Sim */,
+				99A3670121CAED3D00019750 /* Stock Market SimTests */,
+				99A3670C21CAED3D00019750 /* Stock Market SimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99A366EC21CAED3900019750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994423F322C68D9C00C023EE /* Main.storyboard in Resources */,
+				99A366FC21CAED3D00019750 /* LaunchScreen.storyboard in Resources */,
+				99A366F921CAED3D00019750 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3670021CAED3D00019750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3670B21CAED3D00019750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F7A0946CF85E697016F3191 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stock Market Sim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7803111FB040C36E35F60AFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stock Market Sim/Pods-Stock Market Sim-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stock Market Sim/Pods-Stock Market Sim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99A366EA21CAED3900019750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990C0F0022501EF200FC3D45 /* ChartController.swift in Sources */,
+				99A366F421CAED3A00019750 /* ViewController.swift in Sources */,
+				99A366F221CAED3A00019750 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A366FE21CAED3D00019750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A3670721CAED3D00019750 /* Stock_Market_SimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A3670921CAED3D00019750 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A3671221CAED3D00019750 /* Stock_Market_SimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99A3670421CAED3D00019750 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99A366ED21CAED3900019750 /* Stock Market Sim */;
+			targetProxy = 99A3670321CAED3D00019750 /* PBXContainerItemProxy */;
+		};
+		99A3670F21CAED3D00019750 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99A366ED21CAED3900019750 /* Stock Market Sim */;
+			targetProxy = 99A3670E21CAED3D00019750 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		994423F122C68D9C00C023EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				994423F222C68D9C00C023EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99A366FA21CAED3D00019750 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99A366FB21CAED3D00019750 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99A3671421CAED3D00019750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99A3671521CAED3D00019750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99A3671721CAED3D00019750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C95AEFFE69B4ACD349D8F3 /* Pods-Stock Market Sim.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXQ9KTYUC8;
+				INFOPLIST_FILE = "Stock Market Sim/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anish-s-Team.Stock-Market-Sim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99A3671821CAED3D00019750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740FA65E47970860297727D /* Pods-Stock Market Sim.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXQ9KTYUC8;
+				INFOPLIST_FILE = "Stock Market Sim/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anish-s-Team.Stock-Market-Sim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99A3671A21CAED3D00019750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXQ9KTYUC8;
+				INFOPLIST_FILE = "Stock Market SimTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anish-s-Team.Stock-Market-SimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock Market Sim.app/Stock Market Sim";
+			};
+			name = Debug;
+		};
+		99A3671B21CAED3D00019750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXQ9KTYUC8;
+				INFOPLIST_FILE = "Stock Market SimTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anish-s-Team.Stock-Market-SimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock Market Sim.app/Stock Market Sim";
+			};
+			name = Release;
+		};
+		99A3671D21CAED3D00019750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXQ9KTYUC8;
+				INFOPLIST_FILE = "Stock Market SimUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anish-s-Team.Stock-Market-SimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stock Market Sim";
+			};
+			name = Debug;
+		};
+		99A3671E21CAED3D00019750 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PXQ9KTYUC8;
+				INFOPLIST_FILE = "Stock Market SimUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Anish-s-Team.Stock-Market-SimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stock Market Sim";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99A366E921CAED3900019750 /* Build configuration list for PBXProject "Stock Market Sim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3671421CAED3D00019750 /* Debug */,
+				99A3671521CAED3D00019750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A3671621CAED3D00019750 /* Build configuration list for PBXNativeTarget "Stock Market Sim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3671721CAED3D00019750 /* Debug */,
+				99A3671821CAED3D00019750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A3671921CAED3D00019750 /* Build configuration list for PBXNativeTarget "Stock Market SimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3671A21CAED3D00019750 /* Debug */,
+				99A3671B21CAED3D00019750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99A3671C21CAED3D00019750 /* Build configuration list for PBXNativeTarget "Stock Market SimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99A3671D21CAED3D00019750 /* Debug */,
+				99A3671E21CAED3D00019750 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99A366E621CAED3900019750 /* Project object */;
+}

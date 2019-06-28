@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stock_Market_Sim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GHA-F9-TXR">
+                                <rect key="frame" x="16" y="72" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="searchTicker:" destination="BYZ-38-t0r" eventType="editingChanged" id="TpR-5b-Vm7"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Udj-66-VFp">
+                                <rect key="frame" x="16" y="122" width="343" height="468"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="468" id="tAH-r2-c7U"/>
+                                </constraints>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Llv-hc-lX4">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="468"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="468" id="Sn6-WR-drv"/>
+                                    </constraints>
+                                </tableView>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfK-QY-95F">
+                                <rect key="frame" x="16" y="616" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-BN-AuP">
+                                <rect key="frame" x="298" y="72" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KGi-Um-3Gx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Udj-66-VFp" firstAttribute="leading" secondItem="GHA-F9-TXR" secondAttribute="leading" id="3ES-hq-MIY"/>
+                            <constraint firstItem="CfK-QY-95F" firstAttribute="top" secondItem="Udj-66-VFp" secondAttribute="bottom" constant="26" id="AlC-HR-yl7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Udj-66-VFp" secondAttribute="trailing" constant="16" id="DFq-5M-UwZ"/>
+                            <constraint firstItem="Udj-66-VFp" firstAttribute="top" secondItem="GHA-F9-TXR" secondAttribute="bottom" constant="20" id="KyZ-gK-ryc"/>
+                            <constraint firstItem="Udj-66-VFp" firstAttribute="trailing" secondItem="GHA-F9-TXR" secondAttribute="trailing" id="cjL-hw-ve3"/>
+                            <constraint firstItem="Udj-66-VFp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="122" id="gnq-6W-nVk"/>
+                            <constraint firstItem="Udj-66-VFp" firstAttribute="leading" secondItem="CfK-QY-95F" secondAttribute="leading" id="oq0-Kv-PA8"/>
+                            <constraint firstItem="Udj-66-VFp" firstAttribute="trailing" secondItem="CfK-QY-95F" secondAttribute="trailing" id="vtc-qg-W30"/>
+                            <constraint firstItem="Udj-66-VFp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wkG-ei-vjg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="optionsLabel" destination="CfK-QY-95F" id="LX3-xw-Rw0"/>
+                        <outlet property="searchText" destination="GHA-F9-TXR" id="HAd-Rz-A3t"/>
+                        <outlet property="stockSearchTable" destination="Udj-66-VFp" id="wI3-Ve-1VT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+        </scene>
+        <!--Chart Controller-->
+        <scene sceneID="nJy-iZ-s0E">
+            <objects>
+                <viewController restorationIdentifier="ChartController" storyboardIdentifier="ChartController" id="pF4-oh-fH8" customClass="ChartController" customModule="Stock_Market_Sim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kBA-tN-uRO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hwZ-Rf-3BN" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="100" width="375" height="466"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y43-kf-jv8"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="hwZ-Rf-3BN" id="T1I-k4-F8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQG-yd-7xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.60000000000002" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>

@@ -21,12 +21,11 @@ var symbol : String = ""
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var stockSearchTable: UITableView!
     @IBOutlet weak var searchText: UITextField!
-    @IBOutlet weak var optionsLabel: UILabel!
     var arrRes = [[String:AnyObject]]()
 
     @IBAction func searchTicker(_ sender: Any) {
         getSymbolName(search: searchText.text!)
-        optionsLabel.text = searchText.text
+    
         self.stockSearchTable.reloadData()
         //  optionsLabel.isHidden = false
     }
@@ -35,9 +34,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         stockSearchTable.dataSource = self
         stockSearchTable.delegate = self
-        optionsLabel.isHidden = true
-        self.stockSearchTable.backgroundColor = UIColor.green
-        
+        stockSearchTable.tableFooterView = UIView()
+        stockSearchTable.tableFooterView?.backgroundColor = UIColor.yellow
     }
     
     func getPrices(symbol: String, completion: (_ result: String) -> Void){
@@ -90,7 +88,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cellIdentifier = "StockCell"
         var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
         cell?.textLabel?.textAlignment = .center
-        cell?.backgroundColor = UIColor.clear
+        cell?.contentView.backgroundColor = UIColor.init(red: 219/255, green: 114/255, blue: 114/255, alpha: 1)
         if cell == nil {
             cell?.textLabel?.textAlignment = .center
             cell = UITableViewCell(style: UITableViewCell.CellStyle.value2, reuseIdentifier: cellIdentifier)
@@ -139,7 +137,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 matches[names[i]] = symbols[i]
                             }
                             //print(matches)
-                            self.optionsLabel.text = "\(matches)"
+                            //self.optionsLabel.text = "\(matches)"
                             self.stockSearchTable.reloadData()
                         }
                     }
@@ -161,17 +159,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentCell = tableView.cellForRow(at: indexPath)
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.init(red: 230, green: 240, blue: 94, alpha: 0.5)
-        currentCell?.selectedBackgroundView = bgColorView
-        print("HI")
+        currentCell?.contentView.backgroundColor = UIColor.init(red: 0, green: 0.972380, blue: 0, alpha: 1)
         print(currentCell?.textLabel?.text! ?? "LUL")
-        
-        //
         //currentCell!.selectedBackgroundView = bgColorView
     }
     
-    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let currentCell = tableView.cellForRow(at: indexPath)
+        currentCell?.contentView.backgroundColor = UIColor.init(red: 219/255, green: 114/255, blue: 114/255, alpha: 1)
+        print(currentCell?.textLabel?.text! ?? "LUL")
+
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

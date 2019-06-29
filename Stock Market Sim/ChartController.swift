@@ -25,11 +25,20 @@ class ChartController: UIViewController {
         getPrices(symbol: symbol){
                 (result: String) in
         }
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
+        self.lineChartView.addGestureRecognizer(gesture)
+        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @objc func checkAction(_ sender:UITapGestureRecognizer){
+       print("tapped")
+       print(sender.location(in: lineChartView))
     }
     
     func getPrices(symbol: String, completion: (_ result: String) -> Void){
@@ -44,7 +53,7 @@ class ChartController: UIViewController {
                         // print("key \(key) value \(value)")
                         for (stock, price) in value {
                             //  print("\(stock) + \(price)")
-                            if (stock == "4. close") {
+                            if (stock == "1. open") {
                                 values[key] = "\(price)"
                                 
                                 let stock = StockPrice()
@@ -100,21 +109,13 @@ class ChartController: UIViewController {
         self.lineChartView.rightAxis.enabled = false
         self.lineChartView.doubleTapToZoomEnabled = false
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector(("tapped:")))
-        self.lineChartView.addGestureRecognizer(tapGestureRecognizer)
-        
-        
     //    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     //    lineChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:months)
         lineChartView.xAxis.granularity = 1
         lineChartView.setVisibleXRange(minXRange: 10.0, maxXRange: 100.0)
     }
-    @IBAction func tapped(sender: UITapGestureRecognizer)
-    {
-        print("tapped")
-    }
-
     
+
 }
 
 class StockPrice {
@@ -150,4 +151,10 @@ class StockPrice {
         priceString = p
         price = Double(priceString)!
     }
+}
+
+class MarkerView: UIView {
+    @IBOutlet var valueLabel: UILabel!
+    @IBOutlet var metricLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
 }

@@ -34,8 +34,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         stockSearchTable.dataSource = self
         stockSearchTable.delegate = self
+        stockSearchTable.reloadData()
         stockSearchTable.tableFooterView = UIView()
-        stockSearchTable.tableFooterView?.backgroundColor = UIColor.yellow
+        stockSearchTable.tableFooterView?.backgroundColor = UIColor.black
+        self.stockSearchTable.backgroundColor = UIColor.black
     }
     
     func getPrices(symbol: String, completion: (_ result: String) -> Void){
@@ -82,6 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return matches.count
         //matches.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = stockSearchTable.dequeueReusableCell(withIdentifier: "StockCell", for: indexPath)
@@ -159,7 +162,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentCell = tableView.cellForRow(at: indexPath)
-        currentCell?.contentView.backgroundColor = UIColor.init(red: 0, green: 0.972380, blue: 0, alpha: 1)
+        currentCell?.contentView.backgroundColor = UIColor.init(red: 212/255, green: 89/255, blue: 89/255, alpha: 1)
         print(currentCell?.textLabel?.text! ?? "LUL")
         //currentCell!.selectedBackgroundView = bgColorView
     }

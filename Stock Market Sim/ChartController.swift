@@ -22,12 +22,15 @@ class ChartController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.black
         getPrices(symbol: symbol){
                 (result: String) in
         }
         
-        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
+        let gesture = UILongPressGestureRecognizer(target: self, action:  #selector(self.checkAction))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.checkAction))
         self.lineChartView.addGestureRecognizer(gesture)
+        self.lineChartView.addGestureRecognizer(tapGesture)
         
     }
     
@@ -39,6 +42,7 @@ class ChartController: UIViewController {
     @objc func checkAction(_ sender:UITapGestureRecognizer){
        print("tapped")
        print(sender.location(in: lineChartView))
+    
     }
     
     func getPrices(symbol: String, completion: (_ result: String) -> Void){
@@ -84,8 +88,6 @@ class ChartController: UIViewController {
         }
     }
     
-    
-    
     func setChartValues(dates : [Date]){
         // 1 - creating an array of data entries
         // 1 - creating an array of data entries
@@ -95,6 +97,10 @@ class ChartController: UIViewController {
         }
             
         let set1 = LineChartDataSet(values: yVals1, label : "DataSet")
+        set1.setDrawHighlightIndicators(true)
+        set1.highlightColor = .blue
+        set1.highlightLineWidth = 1
+        
         set1.drawCirclesEnabled = false
         set1.drawFilledEnabled = true
         let gradientColors = [UIColor.cyan.cgColor, UIColor.clear.cgColor] as CFArray // Colors of the gradient
@@ -113,6 +119,8 @@ class ChartController: UIViewController {
     //    lineChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:months)
         lineChartView.xAxis.granularity = 1
         lineChartView.setVisibleXRange(minXRange: 10.0, maxXRange: 100.0)
+        lineChartView.leftAxis.labelTextColor = UIColor.white
+        
     }
     
 
@@ -153,8 +161,13 @@ class StockPrice {
     }
 }
 
-class MarkerView: UIView {
-    @IBOutlet var valueLabel: UILabel!
-    @IBOutlet var metricLabel: UILabel!
-    @IBOutlet var dateLabel: UILabel!
+@objc(BarChartFormatter)
+public class BarChartFormatter: NSObject, IAxisValueFormatter
+{
+    var months: [String]! = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    
+    public func stringForValue(_ value: Double, axis: AxisBase?) -> String
+    {
+        return months[Int(value)]
+    }
 }

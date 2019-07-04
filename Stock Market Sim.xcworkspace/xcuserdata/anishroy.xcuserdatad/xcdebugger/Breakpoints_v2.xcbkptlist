@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stock Market Sim/ChartController.swift"
-            timestampString = "583467718.522382"
+            timestampString = "583947807.415693"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "setChartValues(dates:)"
             landmarkType = "7">
          </BreakpointContent>
